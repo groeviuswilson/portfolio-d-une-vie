@@ -1,0 +1,254 @@
+
+
+
+
+
+
+
+
+::before,
+
+::after {
+
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+
+body {
+
+  background: #222;
+
+  font-family: Raleway, Helvetica, sans-serif;
+
+  position: relative;
+
+}
+
+
+
+/* New Stacking Context with Fixed */
+
+.menu {
+
+  position: fixed;
+
+  height: 100vh;
+
+  left: 0;
+
+  top: 0;
+
+}
+
+
+
+/* To hide the sous-menu */
+
+.wrapper {
+
+  background: #333;
+
+  height: 100vh;
+
+  width: 75px;
+
+}
+
+
+
+
+
+
+
+.nav-bloc {
+
+  padding: 20px 0;
+
+  display: flex;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid #f2f2f21e;
+
+}
+
+.nav-bloc:hover {
+
+  background: rgb(24, 24, 24);
+
+}
+
+.nav-bloc:hover .sous-menu {
+
+  transform: translateX(75px);
+
+}
+
+.icon
+{
+    width: 70px;
+    height: 100px;
+}
+
+.nav-bloc svg {
+
+  width: 25px;
+
+  fill: #f2f2f2;
+
+  transition:  0.2s ease-in-out ;
+
+}
+
+.nav-bloc:hover  svg {
+
+  fill: #50bddf;
+
+}
+
+.sous-menu {
+
+  padding: 0px;
+
+  width: 250px;
+
+  height: 100vh;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  background: #333;
+
+  z-index: -1;
+
+  color: white;
+
+  /* Hidden at the left side */
+
+  transform: translateX(-100%);
+
+  transition: transform 0.2s ease-in-out;
+
+  border-right: 2px solid #000;
+
+  border-left: 2px solid #000;
+
+}
+
+.sous-menu h2 {
+
+  font-family: open sans, sans-serif;
+
+  height: 60px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: #222;
+
+}
+
+.sous-menu ul {
+
+  list-style-type: none;
+
+}
+
+.sous-menu li {
+
+  padding: 15px 20px;
+
+}
+
+.sous-menu li:hover {
+
+  background: rgba(160, 160, 160, 0.555);
+
+}
+
+.sous-menu li a {
+
+   color: #f2f2f2;
+
+   text-decoration: none;
+
+}
+
+
+
+
+
+.Presentation {
+
+  padding-left: 75px;
+
+  color: #f3f3f3;
+  background-image: url(background.jpg);
+
+}
+
+.Presentation h1 {
+
+  font-family: Open Sans, sans-serif;
+
+  text-align: center;
+
+  margin: 30px 0;
+
+  font-size: 40px;
+  color: orange;
+
+}
+
+
+
+.Presentation p {
+
+  max-width: 780px;
+
+  margin: 0 auto;
+
+  padding: 0 30px;
+
+  line-height: 1.7;
+
+}
+
+.nom_pre
+{
+ text-align: center;
+  font-family: cheap-pine, sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 70px;
+transform: translateY(20%)
+
+
+
+}
+
+.portrait
+{
+  
+  max-width:10% ;
+  height:10%;
+  transform: translateY(-40%);
+  float: right;
+}
+
+
+
